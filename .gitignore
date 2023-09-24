@@ -9,8 +9,15 @@ wheels/
 # venv
 .venv
 
+# direnv
+.direnv/
+
 # Environment variables
 .env
 
 # Dataset
 dataset/
+!src/dataset/
+
+# Model
+*.pth
