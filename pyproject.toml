@@ -16,5 +16,5 @@ dev-dependencies = []
 
 [tool.rye.scripts]
 cnn = "python -m src.main"
-train = "python -m src.bin.main --onlyTrain"
-validate = "python -m src.bin.main --onlyValidate"
+train = "python -m src.main --onlyTrain"
+validate = "python -m src.main --onlyValidate"
