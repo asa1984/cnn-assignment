@@ -22,3 +22,6 @@ dataset/
 # Model
 models/
 *.pth
+
+# Report
+*.pdf

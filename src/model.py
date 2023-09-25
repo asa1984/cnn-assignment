@@ -20,9 +20,11 @@ class CustomNet(nn.Module):
         # プーリング層2
         self.pool2 = nn.MaxPool2d(kernel_size=2, stride=2)
 
-        # 全結合層
+        # 全結合層1
         self.fc1 = nn.Linear(32 * 16 * 16, 128)
         self.relu3 = nn.ReLU()
+
+        # 全結合層2
         self.fc2 = nn.Linear(128, num_classes)
 
     def forward(self, x):
