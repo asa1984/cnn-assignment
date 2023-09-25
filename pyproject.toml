@@ -2,13 +2,7 @@
 name = "cnn-assignment"
 version = "0.1.0"
 description = "アルファベットを認識するCNN"
-dependencies = [
-  "torch>=2.0.1",
-  "torchvision>=0.15.2",
-  "numpy>=1.24.4",
-  "matplotlib>=3.7.3",
-  "opencv-python>=4.8.0.76",
-]
+dependencies = ["torch>=2.0.1", "torchvision>=0.15.2", "numpy>=1.24.4"]
 readme = "README.md"
 requires-python = ">= 3.8"
 
@@ -21,6 +15,6 @@ managed = true
 dev-dependencies = []
 
 [tool.rye.scripts]
-dev = "python src/main.py"
-train = "python -m src.bin.train"
-predict = "python -m src.bin.predict"
+cnn = "python -m src.main"
+train = "python -m src.bin.main --onlyTrain"
+validate = "python -m src.bin.main --onlyValidate"

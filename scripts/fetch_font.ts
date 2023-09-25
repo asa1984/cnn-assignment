@@ -1,4 +1,4 @@
-declare namespace google.fonts {
+export declare namespace google.fonts {
   type WebfontList = {
     kind: string;
     items: WebfontFamily[];
